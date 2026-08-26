@@ -1,0 +1,4 @@
+Texto: HOLA MUNDO FELIZ
+Vocales: 6
+Consonantes: 8
+Espacios: 2

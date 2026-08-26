@@ -1,0 +1,4 @@
+Promedio general: 11.40
+Maximo: 15.00
+Minimo: 7.00
+Aprobados: 4
