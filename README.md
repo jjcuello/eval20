@@ -20,8 +20,6 @@ Programacion No Numerica I del Instituto Universitario Santiago Marino.
     resultado_cadena.txt
 ```
 
-El archivo `liniamiento.txt` no forma parte de este repositorio.
-
 ## Requisitos
 
 - Compilador compatible con C99 o posterior.
