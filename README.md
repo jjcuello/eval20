@@ -1,7 +1,7 @@
-# Programas en C - Programacion No Numerica I
+# Programas en C y C++ - Programacion No Numerica I
 
-Coleccion de cuatro ejercicios desarrollados en lenguaje C para el curso de
-Programacion No Numerica I del Instituto Universitario Santiago Marino.
+Coleccion de siete ejercicios desarrollados en lenguajes C y C++ para el curso
+de Programacion No Numerica I del Instituto Universitario Santiago Marino.
 
 ## Estructura del proyecto
 
@@ -18,11 +18,18 @@ Programacion No Numerica I del Instituto Universitario Santiago Marino.
 04_cadenas_texto/
     main.c
     resultado_cadena.txt
+05_arreglo_promedio/
+    main.c
+06_gestion_calificaciones/
+    main.cpp
+07_matriz_dinamica/
+    main.cpp
 ```
 
 ## Requisitos
 
 - Compilador compatible con C99 o posterior.
+- Compilador compatible con C++.
 - Consola de comandos para ejecutar los programas.
 
 En Windows se puede utilizar GCC mediante MinGW. Los comandos de esta
@@ -37,6 +44,9 @@ gcc .\01_inventario_piezas\main.c -o .\01_inventario_piezas\main.exe
 gcc .\02_estadisticas_calificaciones\main.c -o .\02_estadisticas_calificaciones\main.exe
 gcc .\03_inversion_arreglo\main.c -o .\03_inversion_arreglo\main.exe
 gcc .\04_cadenas_texto\main.c -o .\04_cadenas_texto\main.exe
+gcc .\05_arreglo_promedio\main.c -o .\05_arreglo_promedio\main.exe
+g++ .\06_gestion_calificaciones\main.cpp -o .\06_gestion_calificaciones\main.exe
+g++ .\07_matriz_dinamica\main.cpp -o .\07_matriz_dinamica\main.exe
 ```
 
 Luego se puede ejecutar cada programa con:
@@ -46,10 +56,13 @@ Luego se puede ejecutar cada programa con:
 .\02_estadisticas_calificaciones\main.exe
 .\03_inversion_arreglo\main.exe
 .\04_cadenas_texto\main.exe
+.\05_arreglo_promedio\main.exe
+.\06_gestion_calificaciones\main.exe
+.\07_matriz_dinamica\main.exe
 ```
 
-Los programas 02, 03 y 04 muestran sus resultados y esperan que el usuario
-presione Enter antes de cerrar la ventana.
+Los programas 02 al 07 muestran sus resultados y esperan que el usuario
+presione Enter durante la ejecucion o antes de cerrar la ventana.
 
 ## Descripcion de los ejercicios
 
@@ -92,6 +105,31 @@ Ruta: `04_cadenas_texto/main.c`
 Recibe una frase, cuenta sus vocales, consonantes y espacios, y convierte el
 texto a mayusculas. El resultado se muestra en pantalla y se guarda en
 `resultado_cadena.txt`.
+
+### 5. Arreglo unidimensional y promedio
+
+Ruta: `05_arreglo_promedio/main.c`
+
+Solicita la cantidad de enteros que formaran un arreglo y reserva la memoria
+necesaria con `malloc`. Permite ingresar los valores, calcula su promedio y
+libera correctamente la memoria con `free` antes de finalizar.
+
+### 6. Gestion de calificaciones con redimensionamiento
+
+Ruta: `06_gestion_calificaciones/main.cpp`
+
+Gestiona un arreglo dinamico de calificaciones con `new` y `delete[]`.
+Despues de registrar las notas iniciales, redimensiona el arreglo para agregar
+tres estudiantes, muestra la lista final y libera toda la memoria reservada.
+
+### 7. Matriz dinamica bidimensional
+
+Ruta: `07_matriz_dinamica/main.cpp`
+
+Solicita las dimensiones de una matriz de valores `double` y reserva memoria
+para el arreglo de filas y cada fila individualmente. Llena la matriz con el
+producto de sus indices, la muestra en formato de tabla y libera la memoria en
+orden inverso.
 
 ## Archivos de resultados
 
